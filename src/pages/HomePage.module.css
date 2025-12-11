@@ -1,0 +1,5 @@
+.carouselImage {
+  height: 500px; /* Altura máxima para las imágenes del carrusel */
+  object-fit: cover; /* Se asegura que la imagen cubra el espacio sin estirarse */
+  border-radius: 8px; /* Un toque de diseño moderno */
+}
