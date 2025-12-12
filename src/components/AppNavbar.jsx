@@ -14,7 +14,7 @@ const AppNavbar = () => {
         <LinkContainer to="/">
           <Navbar.Brand>
             <img
-              src="./public/assets/logo/logo.png"
+              src="./assets/logo/logo.png"
               width="30"
               height="30"
               className="d-inline-block align-top"

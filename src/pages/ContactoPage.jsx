@@ -1,5 +1,4 @@
 import { Container, Row, Col, Button, Ratio } from 'react-bootstrap';
-import styles from './ContactoPage.module.css';
 import { EnvelopeFill, Whatsapp, Instagram, Linkedin } from 'react-bootstrap-icons';
 
 function ContactoPage() {
@@ -26,15 +25,11 @@ function ContactoPage() {
 
       <Row className="justify-content-center">
         <Col md={10} lg={8}>
-          <div className={styles.mapContainer}>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5934.5755405896125!2d-57.54489166694497!3d-38.00669369055288!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9584dc19ce481755%3A0x79ab889dc012fe0a!2sPlaza%20Col%C3%B3n!5e0!3m2!1ses!2sar!4v1753227936444!5m2!1ses!2sar"
-              title="Ubicación en Google Maps"
-              allowFullScreen
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-            ></iframe>
-          </div>
+          <img
+            src="./assets/mapas/mapa.png"
+            alt="Mapa de ubicación"
+            className="img-fluid rounded shadow w-100"
+          />
         </Col>
       </Row>
     </Container>
