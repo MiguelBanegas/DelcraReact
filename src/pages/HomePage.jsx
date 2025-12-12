@@ -71,7 +71,7 @@ function HomePage() {
       <Container as="section" id="quienes-somos" fluid className="bg-light p-5">
         <h2 className="text-center mb-4">Quiénes Somos</h2>
         <p className="text-center mx-auto fs-5 text-secondary lh-lg" style={{ maxWidth: '800px' }}>
-          Somos un equipo de profesionales con más de 10 años de experiencia, en constante capacitación, y con gran pasión por ofrecer soluciones eléctricas y de mantenimiento de máxima calidad. <br />
+          Somos un equipo de Profesionales con más de 10 años de experiencia, en constante capacitación, y con gran pasión por ofrecer soluciones eléctricas y de mantenimiento de máxima calidad. <br />
           Nuestra visión es garantizar la seguridad y eficiencia en cada proyecto, planificando desde el día uno para construir relaciones de confianza a largo plazo con nuestros clientes.
         </p>
       </Container>
