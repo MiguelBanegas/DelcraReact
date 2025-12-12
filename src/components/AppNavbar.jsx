@@ -14,11 +14,11 @@ const AppNavbar = () => {
         <LinkContainer to="/">
           <Navbar.Brand>
             <img
-              src="./assets/logo/logo.png"
+              src="/assets/logo/logoconR.jpeg"
               width="30"
               height="30"
               className="d-inline-block align-top"
-              alt="logo DELCRA"
+              alt="logo DELCRA con R"
             />
             {' '}
             DELCRA®

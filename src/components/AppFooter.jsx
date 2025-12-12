@@ -14,8 +14,8 @@ function AppFooter() {
           <Col md={3} lg={2} xl={2} className="mx-auto mt-3">
             <h5 className="text-uppercase mb-4 fw-bold text-warning">Enlaces</h5>
             <p><Link to="/servicios" className="text-white text-decoration-none">Servicios</Link></p>
-            <p><a href="/#proyectos" className="text-white text-decoration-none">Proyectos</a></p>
-            <p><a href="/#clientes" className="text-white text-decoration-none">Clientes</a></p>
+            <p><Link to="/#proyectos" className="text-white text-decoration-none">Proyectos</Link></p>
+            <p><Link to="/#clientes" className="text-white text-decoration-none">Clientes</Link></p>
             <p><Link to="/contacto" className="text-white text-decoration-none">Contacto</Link></p>
           </Col>
           <Col md={4} lg={3} xl={3} className="mx-auto mt-3">
