@@ -21,7 +21,7 @@ const AppNavbar = () => {
               alt="logo DELCRA con R"
             />
             {' '}
-            DELCRA®
+            DELCRA<sup><small>®</small></sup>
           </Navbar.Brand>
         </LinkContainer>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />

@@ -8,7 +8,7 @@ function AppFooter() {
       <Container className="text-center text-md-start">
         <Row className="text-center text-md-start">
           <Col md={3} lg={3} xl={3} className="mx-auto mt-3">
-            <h5 className="text-uppercase mb-4 fw-bold text-warning">DELCRA®</h5>
+            <h5 className="text-uppercase mb-4 fw-bold text-warning">DELCRA<sup><small>®</small></sup></h5>
             <p>Soluciones eléctricas integrales para la industria, el comercio y la hotelería. Garantizamos seguridad, eficiencia y tecnología de punta en cada proyecto.</p>
           </Col>
           <Col md={3} lg={2} xl={2} className="mx-auto mt-3">
