@@ -27,7 +27,7 @@ function ContactoPage() {
         <Col md={10} lg={8}>
           <img
             src="./assets/mapas/mapa.png"
-            alt="Mapa de ubicación"
+            alt="Mapa de ubicación de DELCRA"
             className="img-fluid rounded shadow w-100"
           />
         </Col>
