@@ -4,8 +4,24 @@ import ServiceCard from "../components/ServiceCard";
 const servicesData = [
   {
     image: "/assets/proyectos/3.png",
-    title: "Instalaciones Eléctricas",
-    text: "Proyecto e instalación de sistemas eléctricos, eficientes, seguros, conforme a normativas vigentes y adaptados a las necesidades de cada cliente.",
+    images: [
+      "/assets/proyectos/iluminacion/IMG-20230707-WA0107.jpeg",
+      "/assets/proyectos/iluminacion/IMG-20230922-WA0338.jpg",
+      "/assets/proyectos/iluminacion/IMG-20230922-WA0342.jpg",
+      "/assets/proyectos/iluminacion/IMG-20230922-WA0344.jpg",
+      "/assets/proyectos/iluminacion/IMG-20230922-WA0348.jpg",
+      "/assets/proyectos/iluminacion/IMG-20230922-WA0349.jpg",
+      "/assets/proyectos/iluminacion/IMG-20231002-WA0132.jpeg",
+      "/assets/proyectos/iluminacion/IMG-20231002-WA0135.jpg",
+      "/assets/proyectos/iluminacion/IMG-20231004-WA0269.jpg",
+      "/assets/proyectos/iluminacion/IMG-20231005-WA0233.jpeg",
+      "/assets/proyectos/iluminacion/IMG-20231005-WA0234.jpeg",
+      "/assets/proyectos/iluminacion/IMG-20231005-WA0240.jpeg",
+      "/assets/proyectos/iluminacion/IMG-20231005-WA0241(1).jpeg",
+      "/assets/proyectos/iluminacion/IMG-20231005-WA0241.jpeg",
+    ],
+    title: "Proyecto de Iluminación LED",
+    text: "Diseño e implementación de sistemas de iluminación LED de alta eficiencia, optimizando el consumo energético y mejorando la estética de locales comerciales, oficinas e industrias.",
   },
   {
     image: "/assets/proyectos/1.png",
@@ -29,6 +45,7 @@ function ServiciosPage() {
             <ServiceCard
               key={index}
               image={service.image}
+              images={service.images}
               title={service.title}
               text={service.text}
             />
