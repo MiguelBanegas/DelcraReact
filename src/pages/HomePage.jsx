@@ -2,6 +2,7 @@ import { Container, Row, Col, Card, Button, Carousel, Image } from 'react-bootst
 import { Link } from 'react-router-dom';
 import styles from './HomePage.module.css';
 import CarouselNetflix from "../components/CarouselNetflix";
+import CarouselIluminacion from "../components/CarouselIluminacion";
 
 /*  */
 /* function Home() { */
@@ -78,16 +79,17 @@ function HomePage() {
       
       <Container as="section" id="proyectos" className="py-5">
         <h2 className="text-center mb-4">Proyectos Realizados</h2>
-       {/*  <Carousel> */}
-       {/*    <Carousel.Item><Image src="/assets/proyectos/1.png" className="d-block w-50" /></Carousel.Item> */}
-       {/*    <Carousel.Item><Image src="/assets/proyectos/2.png" className="d-block w-50" /></Carousel.Item> */}
-       {/*    <Carousel.Item><Image src="/assets/proyectos/3.png" className="d-block w-50" /></Carousel.Item> */}
-       {/*    <Carousel.Item><Image src="/assets/proyectos/4.png" className="d-block w-50" /></Carousel.Item> */}
-       {/*    <Carousel.Item><Image src="/assets/proyectos/5.png" className="d-block w-50" /></Carousel.Item> */}
-       {/*  </Carousel> */}
         <CarouselNetflix />
-      
       </Container>
+
+      <Container as="section" id="iluminacion" className="py-5 bg-white">
+        <h2 className="text-center mb-4">Destacado: Proyecto de Iluminación LED</h2>
+        <p className="text-center lead text-secondary mb-4">
+          Un recorrido visual por una de nuestras instalaciones más completas de eficiencia energética y diseño lumínico.
+        </p>
+        <CarouselIluminacion />
+      </Container>
+
 
       <Container as="section" id="clientes" fluid className="bg-light p-5">
         <h2 className="text-center mb-4">Confían en Nosotros</h2>

@@ -1,39 +1,13 @@
-import { Card, Col, Carousel } from 'react-bootstrap';
+import { Card, Col } from 'react-bootstrap';
 
-function ServiceCard({ image, images, title, text }) {
-  const hasMultipleImages = images && Array.isArray(images) && images.length > 0;
-
+function ServiceCard({ image, title, text }) {
   return (
     <Col md={4} className="mb-4">
-      <Card className="h-100 shadow-sm border-0">
-        {hasMultipleImages ? (
-          <Carousel interval={3000} indicators={true} fade>
-            {images.map((img, idx) => (
-              <Carousel.Item key={idx}>
-                <div style={{ height: '240px', overflow: 'hidden' }}>
-                   <img
-                    className="d-block w-100 h-100"
-                    src={img}
-                    alt={`${title} - ${idx + 1}`}
-                    style={{ objectFit: 'cover' }}
-                  />
-                </div>
-              </Carousel.Item>
-            ))}
-          </Carousel>
-        ) : (
-          <div style={{ height: '240px', overflow: 'hidden' }}>
-            <Card.Img 
-              variant="top" 
-              src={image} 
-              alt={title} 
-              style={{ height: '100%', objectFit: 'cover' }}
-            />
-          </div>
-        )}
-        <Card.Body className="text-center d-flex flex-column">
-          <Card.Title className="fw-bold">{title}</Card.Title>
-          <Card.Text className="text-muted flex-grow-1">{text}</Card.Text>
+      <Card className="h-100">
+        <Card.Img variant="top" src={image} alt={title} />
+        <Card.Body className="text-center">
+          <Card.Title>{title}</Card.Title>
+          <Card.Text>{text}</Card.Text>
         </Card.Body>
       </Card>
     </Col>
