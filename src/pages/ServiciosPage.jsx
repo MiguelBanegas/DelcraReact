@@ -64,51 +64,7 @@ function ServiciosPage() {
         </Row>
       </section>
 
-      <hr className="my-5" />
 
-      <section id="galeria-servicios" className="content-section py-1">
-        <h2 className="text-center mb-4">Galería de Nuestros Servicios</h2>
-        <p className="text-center lead mb-5">
-          Explora algunas de nuestras instalaciones y proyectos destacados.
-        </p>
-        <Row>
-          <Col md={6} lg={4} className="mb-4">
-            <Card className="h-100">
-              <Card.Img
-                variant="top"
-                src="/assets/proyectos/1.png"
-                alt="Proyecto de Iluminación LED"
-              />
-              <Card.Body>
-                <Card.Title>Proyecto de Iluminación LED</Card.Title>
-                <Card.Text>
-                  Instalación de iluminación eficiente en un local comercial.
-                </Card.Text>
-              </Card.Body>
-            </Card>
-          </Col>
-          <Col md={6} lg={4} className="mb-4">
-            <Card className="h-100">
-              <Ratio aspectRatio="16x9">
-                <video
-                  controls
-                  className="w-100 h-100"
-                  style={{ objectFit: "cover" }}
-                >
-                  <source src="/assets/proyectos/v1.mp4" type="video/mp4" />
-                  Tu navegador no soporta la etiqueta de video.
-                </video>
-              </Ratio>
-              <Card.Body className="text-center">
-                <Card.Title>Video: Nuestro Proceso de Trabajo</Card.Title>
-                <Card.Text>
-                  Una mirada detrás de escena en la ejecución de un proyecto.
-                </Card.Text>
-              </Card.Body>
-            </Card>
-          </Col>
-        </Row>
-      </section>
     </Container>
   );
 }
