@@ -1,6 +1,7 @@
 import { Container, Row, Col } from 'react-bootstrap';
 import { Facebook, Instagram, Linkedin, Whatsapp, HouseDoorFill, EnvelopeFill, TelephoneFill } from 'react-bootstrap-icons';
 import { Link } from 'react-router-dom';
+import pkg from '../../package.json';
 
 function AppFooter() {
   return (
@@ -28,7 +29,10 @@ function AppFooter() {
         <hr className="mb-4 border-secondary" />
         <Row className="align-items-center">
           <Col md={7} lg={8}>
-            <p className="m-0">© 2025 DELCRA.com.ar - Todos los derechos reservados</p>
+            <p className="m-0">
+              © 2025 DELCRA.com.ar - Todos los derechos reservados 
+              <span className="ms-2 text-secondary" style={{ fontSize: '0.8rem' }}>v{pkg.version}</span>
+            </p>
           </Col>
           <Col md={5} lg={4}>
             <div className="text-center text-md-end">
