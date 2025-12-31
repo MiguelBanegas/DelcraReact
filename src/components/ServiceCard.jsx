@@ -15,6 +15,8 @@ function ServiceCard({ image, images, title, text }) {
                     className="d-block w-100 h-100"
                     src={img}
                     alt={`${title} - ${idx + 1}`}
+                    loading="lazy"
+                    decoding="async"
                     style={{ objectFit: 'cover' }}
                   />
                 </div>
@@ -27,6 +29,7 @@ function ServiceCard({ image, images, title, text }) {
               variant="top" 
               src={image} 
               alt={title} 
+              loading="lazy"
               style={{ height: '100%', objectFit: 'cover' }}
             />
           </div>

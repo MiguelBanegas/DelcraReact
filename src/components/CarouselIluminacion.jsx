@@ -80,6 +80,8 @@ export default function CarouselIluminacion() {
                 src={src}
                 alt={`iluminacion-${i}`}
                 onClick={() => handleZoom(i)}
+                loading="lazy"
+                decoding="async"
                 style={{
                   width: isZoomed ? "95%" : isCenter ? "85%" : "70%",
                   transform: isZoomed ? "scale(1.2)" : "scale(1)",

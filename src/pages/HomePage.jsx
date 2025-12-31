@@ -94,10 +94,10 @@ function HomePage() {
       <Container as="section" id="clientes" fluid className="bg-light p-5">
         <h2 className="text-center mb-4">Confían en Nosotros</h2>
         <Row className="justify-content-center align-items-center">
-          <Col xs={6} md={3} className="mb-3 text-center"><Image src="/assets/empresas/Bacara logo.jpg" fluid /></Col>
-          <Col xs={6} md={3} className="mb-3 text-center"><Image src="/assets/empresas/Tequendama logo.jpg" fluid /></Col>
-          <Col xs={6} md={3} className="mb-3 text-center"><Image src="/assets/empresas/Domo baires logo.jpg" fluid /></Col>
-          <Col xs={6} md={3} className="mb-3 text-center"><Image src="/assets/empresas/La mansion del bosque logo.jpg" fluid /></Col>
+          <Col xs={6} md={3} className="mb-3 text-center"><Image src="/assets/empresas/Bacara logo.jpg" fluid loading="lazy" /></Col>
+          <Col xs={6} md={3} className="mb-3 text-center"><Image src="/assets/empresas/Tequendama logo.jpg" fluid loading="lazy" /></Col>
+          <Col xs={6} md={3} className="mb-3 text-center"><Image src="/assets/empresas/Domo baires logo.jpg" fluid loading="lazy" /></Col>
+          <Col xs={6} md={3} className="mb-3 text-center"><Image src="/assets/empresas/La mansion del bosque logo.jpg" fluid loading="lazy" /></Col>
         </Row>
       </Container>
 
