@@ -29,7 +29,7 @@ export default function CarouselNetflix() {
   };
 
   return (
-    <div style={{ width: "90%", margin: "auto", paddingTop: "30px" }}>
+    <div style={{ width: "90%", margin: "auto", paddingTop: "30px", paddingBottom: "50px" }}>
       <Swiper
         effect="coverflow"
         grabCursor={true}
@@ -37,7 +37,7 @@ export default function CarouselNetflix() {
         slidesPerView={3}
         loop={true}
         autoplay={{
-          delay: 1800,
+          delay: 2000,
           disableOnInteraction: false
         }}
         coverflowEffect={{
@@ -51,7 +51,7 @@ export default function CarouselNetflix() {
         navigation={true}
         modules={[EffectCoverflow, Pagination, Navigation, Autoplay]}
         onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
-        style={{ height: "350px" }}
+        style={{ height: "400px" }}
       >
         {images.map((src, i) => {
           const isCenter = i === activeIndex;
@@ -73,18 +73,19 @@ export default function CarouselNetflix() {
                 onClick={() => handleZoom(i)}
                 style={{
                   width: isZoomed ? "95%" : isCenter ? "85%" : "70%",
-                  transform: isZoomed ? "scale(1.25)" : "scale(1)",
-                  height: "auto",
+                  transform: isZoomed ? "scale(1.2)" : "scale(1)",
+                  height: "300px",
+                  objectFit: "cover",
                   cursor: "pointer",
-                  borderRadius: "12px",
-                  opacity: isCenter ? 1 : 0.45, // sombreado lateral
+                  borderRadius: "15px",
+                  opacity: isCenter ? 1 : 0.5,
                   filter: isCenter ? "none" : "blur(1px) brightness(0.8)",
                   transition: "all 0.35s ease",
                   boxShadow: isZoomed
-                    ? "0 0 25px rgba(0,0,0,0.7)"
+                    ? "0 10px 30px rgba(0,0,0,0.8)"
                     : isCenter
-                    ? "0 0 15px rgba(0,0,0,0.5)"
-                    : "0 0 10px rgba(0,0,0,0.3)"
+                    ? "0 5px 20px rgba(0,0,0,0.5)"
+                    : "0 2px 10px rgba(0,0,0,0.3)"
                 }}
               />
             </SwiperSlide>
@@ -94,3 +95,4 @@ export default function CarouselNetflix() {
     </div>
   );
 }
+
