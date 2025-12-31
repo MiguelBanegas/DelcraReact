@@ -20,17 +20,17 @@ import CarouselIluminacion from "../components/CarouselIluminacion";
 
 const servicesData = [
   {
-    image: "/assets/proyectos/3.png",
+    image: "/assets/proyectos/1.png",
     title: "Instalaciones Eléctricas",
-    text: "Proyecto e instalación de sistemas eléctricos, eficientes, seguros, conforme a normativas vigentes y adaptados a las necesidades de cada cliente."
+    text: "Somos un equipo de jóvenes Profesionales altamente capacitados con mas de 10 años de experiencia y  constante capacitación. <br />Nuestra visión es lograr seguridad y eficiencia en cada proyecto, planificando desde el día cero, acompañamos a nuestros clientes con un servicio exclusivo y personalizado. <br />Estamos donde y cuándo el cliente nos necesita para proteger su inversión."
   },
   {
-    image: "/assets/proyectos/1.png",
+    image: "/assets/proyectos/3.png",
     title: "Mantenimiento Preventivo",
     text: "Planificación de mantenimiento para optimizar el rendimiento, evitar fallas y prolongar la vida útil de sus equipos."
   },
   {
-    image: "/assets/proyectos/2.png",
+    image: "/assets/proyectos/autom.jpg",
     title: "Automatización y Control",
     text: "Creación de sistemas inteligentes a medida, según las necesidades de procesos o iluminación, garantizando continuidad, eficiencia y seguridad."
   }
@@ -40,10 +40,14 @@ function HomePage() {
   return (
     <Container fluid className="p-0">
       {/* Sección Hero */}
-      <Container fluid className="bg-light text-center p-5">
+      <Container fluid className="bg-light text-center p-6">
         <h1>⚡Soluciones Eléctricas <br /> para hotelería, comercio, hogares e industria⚡</h1>
         <p className="lead text-secondary">
-          Ofrecemos servicios integrales <br /> garantizando seguridad y eficiencia energética.
+          Ofrecemos servicios integrales, garantizando seguridad y eficiencia energética.
+          <br />
+          Brindamos seguridad y eficiencia a través de servicios exclusivos garantizados.
+          <br />
+          Diseñamos y ejecutamos instalaciones eléctricas acorde a los requerimientos de la legislación y normativa vigentes en nuestro país.
         </p>
       </Container>
       
@@ -58,7 +62,11 @@ function HomePage() {
                 </div>
                 <Card.Body className="d-flex flex-column">
                   <Card.Title>{service.title}</Card.Title>
-                  <Card.Text className="flex-grow-1">{service.text}</Card.Text>
+                  <Card.Text className="flex-grow-1">
+                    {service.text.split('<br />').map((item, key) => (
+                      <span key={key}>{item}<br /></span>
+                    ))}
+                  </Card.Text>
                 </Card.Body>
               </Card>
             </Col>

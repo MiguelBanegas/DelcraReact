@@ -36,7 +36,11 @@ function ServiceCard({ image, images, title, text }) {
         )}
         <Card.Body className="text-center d-flex flex-column">
           <Card.Title className="fw-bold">{title}</Card.Title>
-          <Card.Text className="text-muted flex-grow-1">{text}</Card.Text>
+          <Card.Text className="text-muted flex-grow-1">
+            {text.split('<br />').map((item, key) => (
+              <span key={key}>{item}<br /></span>
+            ))}
+          </Card.Text>
         </Card.Body>
       </Card>
     </Col>
