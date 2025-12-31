@@ -4,6 +4,7 @@ import AppHeader from './AppHeader';
 import AppFooter from './AppFooter';
 import { Container } from 'react-bootstrap';
 import { Outlet, useLocation } from 'react-router-dom';
+import ScrollToTop from './ScrollToTop';
 
 function Layout() {
   const { hash } = useLocation();
@@ -22,6 +23,7 @@ function Layout() {
 
   return (
     <>
+      <ScrollToTop />
       <AppHeader />
       <AppNavbar />
       <Container as="main" fluid className="flex-grow-1 p-0">
