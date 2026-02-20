@@ -13,9 +13,7 @@ import {
   Shop,
   House
 } from 'react-bootstrap-icons';
-import styles from './HomePage.module.css';
 import CarouselNetflix from "../components/CarouselNetflix";
-import CarouselIluminacion from "../components/CarouselIluminacion";
 
 const servicesData = [
   {
@@ -295,18 +293,18 @@ function HomePage() {
             {[
               {
                 text: "El equipo de DELCRA transformó por completo nuestra instalación eléctrica, asegurando la continuidad de la operación sin fallas.",
-                author: "Juan Pérez",
-                position: "Gerente de Hotel Costa"
+                author: "Cliente del sector hotelero",
+                position: "Mar del Plata"
               },
               {
                 text: "El mantenimiento preventivo que realizan es excelente. Nos ahorraron mucho dinero en reparaciones de emergencia.",
-                author: "Ana Gómez",
-                position: "Jefa de Planta en Indunor"
+                author: "Cliente del sector industrial",
+                position: "Buenos Aires"
               },
               {
                 text: "La automatización de la iluminación en nuestro local no solo mejoró la estética sino que redujo el consumo notablemente.",
-                author: "Carlos Rodríguez",
-                position: "Dueño de Tienda Central"
+                author: "Cliente del sector comercial",
+                position: "CABA"
               }
             ].map((msg, i) => (
               <Col md={4} key={i} className="mb-4">

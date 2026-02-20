@@ -1,8 +1,10 @@
+import { Suspense, lazy } from 'react';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Layout from './components/Layout';
 import HomePage from './pages/HomePage';
-import ServiciosPage from './pages/ServiciosPage';
-import ContactoPage from './pages/ContactoPage';
+
+const ServiciosPage = lazy(() => import('./pages/ServiciosPage'));
+const ContactoPage = lazy(() => import('./pages/ContactoPage'));
 
 const router = createBrowserRouter([
   {
@@ -26,7 +28,11 @@ const router = createBrowserRouter([
 ]);
 
 function App() {
-  return <RouterProvider router={router} />;
+  return (
+    <Suspense fallback={<div className="text-center py-5">Cargando...</div>}>
+      <RouterProvider router={router} />
+    </Suspense>
+  );
 }
 
 export default App;

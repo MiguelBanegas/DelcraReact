@@ -1,5 +1,5 @@
 import { Container, Row, Col, Button, Ratio } from 'react-bootstrap';
-import { EnvelopeFill, Whatsapp, Instagram, Linkedin } from 'react-bootstrap-icons';
+import { EnvelopeFill, Whatsapp, Instagram } from 'react-bootstrap-icons';
 
 function ContactoPage() {
   return (
@@ -18,15 +18,12 @@ function ContactoPage() {
         <Button href="https://www.instagram.com/delcra_/" target="_blank" rel="noopener noreferrer" title="Instagram" variant="outline-danger" className="rounded-circle d-flex align-items-center justify-content-center" style={{ width: '50px', height: '50px' }}>
           <Instagram size={24} />
         </Button>
-        <Button href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" title="LinkedIn" variant="outline-info" className="rounded-circle d-flex align-items-center justify-content-center" style={{ width: '50px', height: '50px' }}>
-          <Linkedin size={24} />
-        </Button>
       </div>
 
       <Row className="justify-content-center">
         <Col md={10} lg={8}>
           <img
-            src="./assets/mapas/mapa.png"
+            src="/assets/mapas/mapa.png"
             alt="Mapa de ubicación de DELCRA"
             className="img-fluid rounded shadow w-100"
           />

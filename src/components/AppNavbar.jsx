@@ -1,4 +1,4 @@
-import React from 'react';
+import { useEffect } from 'react';
 import { Navbar, Nav, Container } from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap';
 import './Navbar.css';
@@ -6,7 +6,10 @@ import './Navbar.css';
 const AppNavbar = () => {
   // Theme is now hardcoded to 'light'
   const theme = 'light';
-  document.documentElement.setAttribute('data-bs-theme', theme);
+
+  useEffect(() => {
+    document.documentElement.setAttribute('data-bs-theme', theme);
+  }, [theme]);
 
   return (
     <Navbar collapseOnSelect expand="lg" bg={theme} variant={theme} className="app-navbar" fixed="top">

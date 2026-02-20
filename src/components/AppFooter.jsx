@@ -1,5 +1,5 @@
 import { Container, Row, Col } from 'react-bootstrap';
-import { Facebook, Instagram, Linkedin, Whatsapp, HouseDoorFill, EnvelopeFill, TelephoneFill } from 'react-bootstrap-icons';
+import { Instagram, Whatsapp, HouseDoorFill, EnvelopeFill, TelephoneFill } from 'react-bootstrap-icons';
 import { Link } from 'react-router-dom';
 import pkg from '../../package.json';
 
@@ -36,9 +36,7 @@ function AppFooter() {
           </Col>
           <Col md={5} lg={4}>
             <div className="text-center text-md-end">
-              <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" className="btn btn-outline-light rounded-circle m-1 d-inline-flex align-items-center justify-content-center" style={{ width: '40px', height: '40px' }}><Facebook size={20} /></a>
               <a href="https://www.instagram.com/delcra_/" target="_blank" rel="noopener noreferrer" className="btn btn-outline-light rounded-circle m-1 d-inline-flex align-items-center justify-content-center" style={{ width: '40px', height: '40px' }}><Instagram size={20} /></a>
-              <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" className="btn btn-outline-light rounded-circle m-1 d-inline-flex align-items-center justify-content-center" style={{ width: '40px', height: '40px' }}><Linkedin size={20} /></a>
               <a href="https://wa.me/5491159490184" target="_blank" rel="noopener noreferrer" className="btn btn-outline-light rounded-circle m-1 d-inline-flex align-items-center justify-content-center" style={{ width: '40px', height: '40px' }}><Whatsapp size={20} /></a>
             </div>
           </Col>
