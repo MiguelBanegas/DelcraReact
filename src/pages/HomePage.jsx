@@ -16,7 +16,6 @@ import {
 import styles from './HomePage.module.css';
 import CarouselNetflix from "../components/CarouselNetflix";
 import CarouselIluminacion from "../components/CarouselIluminacion";
-import WhatsAppButton from "../components/WhatsAppButton";
 
 const servicesData = [
   {
@@ -39,17 +38,19 @@ const servicesData = [
 function HomePage() {
   return (
     <Container fluid className="p-0">
-      <WhatsAppButton />
       
       {/* 1. HERO PRINCIPAL REEMPLAZADO */}
-      <section className="hero-gradient py-10 text-center">
-        <Container>
+      <section className="hero-gradient py-10 text-center hero-glow-container">
+        <Container className="fade-in-up">
           <Row className="justify-content-center">
             <Col lg={10} xl={8}>
-              <h1 className="display-3 fw-bold mb-4">
-                DELCRA <span className="text-primary">Soluciones Eléctricas</span>
+              <h1 className="display-2 fw-bold mb-4">
+                DELCRA<sup><small style={{ fontSize: '0.5em' }}>®</small></sup>
+                <br />
+                <span className="text-primary">Soluciones Eléctricas</span>
               </h1>
-              <h2 className="h3 mb-4 text-dark opacity-90">
+              <div className="energy-line mx-auto" style={{ maxWidth: '200px' }}></div>
+              <h2 className="h3 mb-4 text-dark opacity-90 shadow-sm-text">
                 Ingeniería aplicada para instalaciones eléctricas seguras y confiables.
               </h2>
               <p className="fs-5 text-secondary mb-5">
@@ -58,7 +59,7 @@ function HomePage() {
                 Instalaciones diseñadas bajo normativa vigente, con enfoque en seguridad, eficiencia energética y continuidad operativa.
               </p>
               <div className="d-flex flex-wrap justify-content-center gap-3">
-                <Button as={Link} to="/contacto" variant="primary" size="lg" className="px-5 py-3 shadow">
+                <Button as={Link} to="/contacto" variant="primary" size="lg" className="px-5 py-3 shadow electric-glow">
                   Solicitar asesoramiento
                 </Button>
                 <Button as={Link} to="/servicios" variant="outline-primary" size="lg" className="px-5 py-3">
@@ -254,11 +255,34 @@ function HomePage() {
           <div className="text-center mb-5">
             <h2 className="display-5 fw-bold">Confían en Nosotros</h2>
           </div>
-          <Row className="justify-content-center align-items-center g-4 grayscale opacity-75">
-            <Col xs={6} md={3} className="text-center"><Image src="/assets/empresas/Bacara logo.jpg" fluid loading="lazy" style={{ maxHeight: '80px' }} /></Col>
-            <Col xs={6} md={3} className="text-center"><Image src="/assets/empresas/Tequendama logo.jpg" fluid loading="lazy" style={{ maxHeight: '80px' }} /></Col>
-            <Col xs={6} md={3} className="text-center"><Image src="/assets/empresas/Domo baires logo.jpg" fluid loading="lazy" style={{ maxHeight: '80px' }} /></Col>
-            <Col xs={6} md={3} className="text-center"><Image src="/assets/empresas/La mansion del bosque logo.jpg" fluid loading="lazy" style={{ maxHeight: '80px' }} /></Col>
+          <Row className="justify-content-center align-items-center g-4">
+            <Col xs={6} md={3} className="text-center">
+              <a href="https://www.instagram.com/bacarabar/?hl=es" target="_blank" rel="noopener noreferrer" className="text-decoration-none">
+                <div className="client-logo-wrapper">
+                  <Image src="/assets/empresas/Bacara logo.jpg" className="client-logo-img" fluid loading="lazy" />
+                </div>
+              </a>
+            </Col>
+            <Col xs={6} md={3} className="text-center">
+              <a href="https://www.tequendama.com.ar/" target="_blank" rel="noopener noreferrer" className="text-decoration-none">
+                <div className="client-logo-wrapper">
+                  <Image src="/assets/empresas/Tequendama logo.jpg" className="client-logo-img" fluid loading="lazy" />
+                </div>
+              </a>
+            </Col>
+            {/* Domo Baires no tiene link proporcionado, se mantiene igual o puedes añadirlo luego */}
+            <Col xs={6} md={3} className="text-center">
+              <div className="client-logo-wrapper">
+                <Image src="/assets/empresas/Domo baires logo.jpg" className="client-logo-img" fluid loading="lazy" />
+              </div>
+            </Col>
+            <Col xs={6} md={3} className="text-center">
+              <a href="https://www.lamansiondelbosque.com/" target="_blank" rel="noopener noreferrer" className="text-decoration-none">
+                <div className="client-logo-wrapper">
+                  <Image src="/assets/empresas/La mansion del bosque logo.jpg" className="client-logo-img" fluid loading="lazy" />
+                </div>
+              </a>
+            </Col>
           </Row>
         </Container>
       </section>

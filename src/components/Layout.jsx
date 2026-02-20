@@ -5,6 +5,7 @@ import AppFooter from './AppFooter';
 import { Container } from 'react-bootstrap';
 import { Outlet, useLocation } from 'react-router-dom';
 import ScrollToTop from './ScrollToTop';
+import WhatsAppButton from './WhatsAppButton';
 
 function Layout() {
   const { hash } = useLocation();
@@ -24,6 +25,7 @@ function Layout() {
   return (
     <>
       <ScrollToTop />
+      <WhatsAppButton />
       <AppHeader />
       <AppNavbar />
       <Container as="main" fluid className="flex-grow-1 p-0">
