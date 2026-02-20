@@ -17,8 +17,8 @@ const servicesData = [
       "/assets/proyectos/instalaciones/IMG_20250808_154913.jpg",
       "/assets/proyectos/instalaciones/IMG_20251108_153056.jpg",
     ],
-    title: "Instalaciones Eléctricas",
-    text: "Proyecto e instalación de sistemas eléctricos, eficientes, seguros, conforme a normativas vigentes y adaptados a las necesidades de cada cliente.",
+    title: "Instalaciones eléctricas industriales",
+    text: "Diseñadas para garantizar continuidad operativa y seguridad en procesos productivos. Implementamos canalizaciones, tableros de potencia y distribución bajo normativa AEA.",
   },
   {
     image: "/assets/proyectos/1.png",
@@ -31,8 +31,8 @@ const servicesData = [
       "/assets/proyectos/mantenimiento/IMG_20251014_153123.jpg",
       "/assets/proyectos/mantenimiento/IMG_20251014_154943.jpg",
     ],
-    title: "Mantenimiento Preventivo",
-    text: "Planificación de mantenimiento para optimizar el rendimiento, evitar fallas y prolongar la vida útil de sus equipos.",
+    title: "Instalaciones comerciales",
+    text: "Soluciones eléctricas seguras y eficientes para espacios de atención al público. Optimizamos el consumo energético y garantizamos la estética y funcionalidad de su local.",
   },
   {
     image: "/assets/proyectos/2.png",
@@ -41,17 +41,22 @@ const servicesData = [
       "/assets/proyectos/automatismos/IMG_20250707_164504038.jpg",
       "/assets/proyectos/automatismos/IMG_20250707_164508486.jpg",
     ],
-    title: "Automatización y Control",
-    text: "Creación de sistemas inteligentes a medida, según las necesidades de procesos o iluminación, garantizando continuidad, eficiencia y seguridad.",
+    title: "Mantenimiento eléctrico",
+    text: "Prevención de fallas y optimización del rendimiento del sistema eléctrico. Realizamos mediciones de puesta a tierra, termografías y planes de mantenimiento preventivo.",
   },
 ];
 
 function ServiciosPage() {
   return (
-    <Container className="py-5">
-      <section id="servicios-main" className="content-section py-1">
-        <h2 className="text-center mb-4">Nuestros Servicios</h2>
-        <Row>
+    <Container className="py-5 mt-5">
+      <section id="servicios-main" className="py-5">
+        <div className="text-center mb-5">
+          <h1 className="display-4 fw-bold text-gradient">Nuestros Servicios Especializados</h1>
+          <p className="fs-5 text-secondary mx-auto" style={{ maxWidth: '800px' }}>
+            Ofrecemos ingeniería aplicada y ejecución profesional para garantizar la seguridad y continuidad de su operación.
+          </p>
+        </div>
+        <Row className="g-4">
           {servicesData.map((service, index) => (
             <ServiceCard
               key={index}
@@ -63,8 +68,6 @@ function ServiciosPage() {
           ))}
         </Row>
       </section>
-
-
     </Container>
   );
 }

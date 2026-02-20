@@ -5,12 +5,12 @@ function ServiceCard({ image, images, title, text }) {
 
   return (
     <Col md={4} className="mb-4">
-      <Card className="h-100 shadow-sm border-0">
+      <Card className="h-100 shadow-sm border-0 card-hover overflow-hidden rounded-4">
         {hasMultipleImages ? (
-          <Carousel interval={3000} indicators={true} fade>
+          <Carousel interval={3000} indicators={false} fade>
             {images.map((img, idx) => (
               <Carousel.Item key={idx}>
-                <div style={{ height: '240px', overflow: 'hidden' }}>
+                <div style={{ height: '280px', overflow: 'hidden' }}>
                    <img
                     className="d-block w-100 h-100"
                     src={img}
@@ -24,7 +24,7 @@ function ServiceCard({ image, images, title, text }) {
             ))}
           </Carousel>
         ) : (
-          <div style={{ height: '240px', overflow: 'hidden' }}>
+          <div style={{ height: '280px', overflow: 'hidden' }}>
             <Card.Img 
               variant="top" 
               src={image} 
@@ -34,9 +34,9 @@ function ServiceCard({ image, images, title, text }) {
             />
           </div>
         )}
-        <Card.Body className="text-center d-flex flex-column">
-          <Card.Title className="fw-bold">{title}</Card.Title>
-          <Card.Text className="text-muted flex-grow-1">
+        <Card.Body className="text-center d-flex flex-column p-4">
+          <Card.Title className="fw-bold h4 mb-3">{title}</Card.Title>
+          <Card.Text className="text-secondary fs-6 flex-grow-1">
             {text.split('<br />').map((item, key) => (
               <span key={key}>{item}<br /></span>
             ))}
