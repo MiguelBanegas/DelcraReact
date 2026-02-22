@@ -9,13 +9,13 @@ const WhatsAppButton = () => {
   return (
     <a 
       href={url} 
-      className="whatsapp-float d-none d-md-flex" 
+      className="whatsapp-float" 
       target="_blank" 
       rel="noopener noreferrer"
       id="whatsapp-floating-button"
     >
       <Whatsapp size={24} />
-      <span>👉 Asesoramiento técnico inmediato</span>
+      <span className="d-none d-md-inline">👉 Asesoramiento técnico inmediato</span>
     </a>
   );
 };
