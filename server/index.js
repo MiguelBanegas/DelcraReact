@@ -24,7 +24,7 @@ app.post("/api/contact", async (req, res) => {
   try {
     const { data, error } = await resend.emails.send({
       from: "Web Delcra <contacto@delcra.com.ar>",
-      to: [process.env.RECEIVER_EMAIL || "miguelangelbanegas@gmail.com"],
+      to: [process.env.RECEIVER_EMAIL || "se.delcra@gmail.com"],
       replyTo: email,
       subject: subject || "Nueva consulta desde la web",
       html: `

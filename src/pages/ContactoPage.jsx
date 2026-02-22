@@ -143,11 +143,11 @@ function ContactoPage() {
             <Card className="border-0 shadow-sm p-4 bg-primary text-white">
               <h3 className="h4 fw-bold mb-4">Información Directa</h3>
               <div className="d-grid gap-3">
-                <a href="mailto:miguelangelbanegas@gmail.com" className="text-white text-decoration-none d-flex align-items-center gap-3 fs-5">
+                <a href="mailto:se.delcra@gmail.com" className="text-white text-decoration-none d-flex align-items-center gap-3 fs-5">
                   <div className="bg-white bg-opacity-20 rounded-circle p-2 d-flex">
                     <EnvelopeFill size={22} />
                   </div>
-                  miguelangelbanegas@gmail.com
+                  se.delcra@gmail.com
                 </a>
                 <a href="https://wa.me/5491159490184" target="_blank" rel="noopener noreferrer" className="text-white text-decoration-none d-flex align-items-center gap-3 fs-5">
                   <div className="bg-white bg-opacity-20 rounded-circle p-2 d-flex">
