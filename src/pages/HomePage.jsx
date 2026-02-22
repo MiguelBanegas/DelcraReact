@@ -259,9 +259,11 @@ function HomePage() {
             </Col>
             {/* Domo Baires no tiene link proporcionado, se mantiene igual o puedes añadirlo luego */}
             <Col xs={6} md={3} className="text-center">
-              <div className="client-logo-wrapper">
-                <Image src="/assets/empresas/Domo baires logo.jpg" className="client-logo-img" fluid loading="lazy" />
-              </div>
+              <a href="https://www.instagram.com/domo.baires?igsh=MW5hNXFzZWkzMzlvdg==" target="_blank" rel="noopener noreferrer" className="text-decoration-none">
+                <div className="client-logo-wrapper">
+                  <Image src="/assets/empresas/Domo baires logo.jpg" className="client-logo-img" fluid loading="lazy" />
+                </div>
+              </a>
             </Col>
             <Col xs={6} md={3} className="text-center">
               <a href="https://www.lamansiondelbosque.com/" target="_blank" rel="noopener noreferrer" className="text-decoration-none">

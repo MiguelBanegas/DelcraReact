@@ -4,6 +4,7 @@ import Layout from './components/Layout';
 import HomePage from './pages/HomePage';
 
 const ServiciosPage = lazy(() => import('./pages/ServiciosPage'));
+const SobreNosotrosPage = lazy(() => import('./pages/SobreNosotrosPage'));
 const ContactoPage = lazy(() => import('./pages/ContactoPage'));
 
 const router = createBrowserRouter([
@@ -18,6 +19,10 @@ const router = createBrowserRouter([
       {
         path: "servicios",
         element: <ServiciosPage />,
+      },
+      {
+        path: "sobre-nosotros",
+        element: <SobreNosotrosPage />,
       },
       {
         path: "contacto",

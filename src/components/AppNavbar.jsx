@@ -36,6 +36,9 @@ const AppNavbar = () => {
             <LinkContainer to="/servicios">
               <Nav.Link className="fw-bold mx-2">Servicios</Nav.Link>
             </LinkContainer>
+            <LinkContainer to="/sobre-nosotros">
+              <Nav.Link className="fw-bold mx-2">Sobre Nosotros</Nav.Link>
+            </LinkContainer>
             <LinkContainer to="/contacto">
               <Nav.Link className="fw-bold mx-2">Contacto</Nav.Link>
             </LinkContainer>
