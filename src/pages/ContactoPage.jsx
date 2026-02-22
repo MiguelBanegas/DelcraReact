@@ -144,20 +144,20 @@ function ContactoPage() {
               <h3 className="h4 fw-bold mb-4">Información Directa</h3>
               <div className="d-grid gap-4">
                 <a href="mailto:se.delcra@gmail.com" className="text-white text-decoration-none d-flex align-items-center gap-3 fs-5">
-                  <div className="bg-white bg-opacity-20 rounded-circle p-2 d-flex align-items-center justify-content-center" style={{ width: '42px', height: '42px' }}>
-                    <EnvelopeFill size={22} />
+                  <div className="bg-white rounded-circle d-flex align-items-center justify-content-center shadow-sm" style={{ width: '48px', height: '48px', minWidth: '48px' }}>
+                    <EnvelopeFill size={24} className="text-primary" />
                   </div>
                   se.delcra@gmail.com
                 </a>
                 <a href="https://wa.me/5491159490184" target="_blank" rel="noopener noreferrer" className="text-white text-decoration-none d-flex align-items-center gap-3 fs-5">
-                  <div className="bg-white bg-opacity-20 rounded-circle p-2 d-flex align-items-center justify-content-center" style={{ width: '42px', height: '42px' }}>
-                    <Whatsapp size={22} />
+                  <div className="bg-white rounded-circle d-flex align-items-center justify-content-center shadow-sm" style={{ width: '48px', height: '48px', minWidth: '48px' }}>
+                    <Whatsapp size={24} className="text-primary" />
                   </div>
                   +54 9 11 5949-0184
                 </a>
                 <a href="https://www.instagram.com/delcra_/" target="_blank" rel="noopener noreferrer" className="text-white text-decoration-none d-flex align-items-center gap-3 fs-5">
-                  <div className="bg-white bg-opacity-20 rounded-circle p-2 d-flex align-items-center justify-content-center" style={{ width: '42px', height: '42px' }}>
-                    <Instagram size={22} />
+                  <div className="bg-white rounded-circle d-flex align-items-center justify-content-center shadow-sm" style={{ width: '48px', height: '48px', minWidth: '48px' }}>
+                    <Instagram size={24} className="text-primary" />
                   </div>
                   @delcra_
                 </a>

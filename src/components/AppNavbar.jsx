@@ -30,9 +30,6 @@ const AppNavbar = () => {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto">
-            <LinkContainer to="/">
-              <Nav.Link className="fw-bold mx-2">Inicio</Nav.Link>
-            </LinkContainer>
             <LinkContainer to="/servicios">
               <Nav.Link className="fw-bold mx-2">Servicios</Nav.Link>
             </LinkContainer>

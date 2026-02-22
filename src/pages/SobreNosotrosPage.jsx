@@ -41,10 +41,10 @@ function SobreNosotrosPage() {
         <Col lg={6}>
            <div className="bg-light p-2 rounded-4 shadow-sm overflow-hidden">
               <img 
-                src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?q=80&w=800&auto=format&fit=crop" 
-                alt="Trabajo eléctrico profesional" 
+                src="/assets/nosotros/historia.jpg" 
+                alt="Trayectoria de DELCRA" 
                 className="img-fluid rounded-3 shadow-sm w-100 h-100"
-                style={{ objectFit: 'cover', minHeight: '300px' }}
+                style={{ objectFit: 'cover', minHeight: '400px' }}
               />
            </div>
         </Col>
