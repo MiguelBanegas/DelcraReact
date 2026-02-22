@@ -72,25 +72,14 @@ function HomePage() {
       {/* 3. BLOQUE DIFERENCIAL */}
       <section className="bg-white">
         <Container>
-          <Row className="align-items-center">
-            <Col lg={6} className="mb-4 mb-lg-0 text-center text-lg-start">
-              <h2 className="display-5 fw-bold mb-4 text-gradient">
+          <Row className="justify-content-center text-center">
+            <Col lg={10}>
+              <h2 className="display-4 fw-bold mb-4 text-gradient">
                 Diseñamos sistemas eléctricos, no instalaciones improvisadas.
               </h2>
-              <p className="fs-5 text-secondary">
+              <p className="fs-5 text-secondary mx-auto" style={{ maxWidth: '800px' }}>
                 Cada proyecto es analizado y ejecutado mediante procesos técnicos definidos que garantizan seguridad, estabilidad y confiabilidad a largo plazo.
               </p>
-            </Col>
-            <Col lg={6}>
-              <div className="p-4 bg-light rounded-4 shadow-sm">
-                <Image 
-                  src="/assets/proyectos/1.png" 
-                  alt="Tablero eléctrico profesional" 
-                  fluid 
-                  className="rounded-3 shadow"
-                  loading="lazy"
-                />
-              </div>
             </Col>
           </Row>
         </Container>
