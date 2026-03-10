@@ -49,7 +49,7 @@ function HomePage() {
               </h1>
               <div className="energy-line mx-auto" style={{ maxWidth: '200px' }}></div>
               <h2 className="h3 mb-4 text-dark opacity-90 shadow-sm-text">
-                Ingeniería aplicada para instalaciones eléctricas seguras y confiables.
+                  Ingeniería aplicada a la energía                
               </h2>
               <p className="fs-5 text-secondary mb-5">
                 Sistemas eléctricos para industria, hotelería, comercios y residencias.
